@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fermentary — Pizza Dough Calculator</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+    background: linear-gradient(180deg, #1a1110 0%, #0a0807 100%);
+    color: #f5e6c8;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 80px 24px 60px;
+  }
+  .hero { text-align: center; padding: 60px 0 40px; }
+  .logo {
+    font-size: 96px;
+    font-weight: 900;
+    color: #f5e6c8;
+    letter-spacing: -4px;
+    line-height: 1;
+    display: inline-block;
+    position: relative;
+  }
+  .logo::after {
+    content: ".";
+    color: #c8322d;
+    margin-left: 4px;
+  }
+  h1 { font-size: 32px; font-weight: 700; margin: 24px 0 12px; }
+  .tagline { color: #a89884; font-size: 18px; margin-bottom: 32px; }
+  h2 { font-size: 20px; font-weight: 700; margin: 36px 0 12px; color: #f5e6c8; }
+  p, li { color: #d4c4a8; font-size: 16px; margin-bottom: 12px; }
+  ul { padding-left: 24px; margin-bottom: 16px; }
+  .card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 32px;
+    margin: 32px 0;
+  }
+  a { color: #c8322d; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer {
+    text-align: center;
+    margin-top: 80px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    color: #6a5d50;
+    font-size: 14px;
+  }
+  .meta { font-size: 14px; color: #8a7c6e; margin-top: 8px; }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <div class="logo">F</div>
+      <h1>Fermentary</h1>
+      <p class="tagline">Pizza Dough Calculator with Q10 Yeast Model</p>
+    </header>
+
+    <div class="card">
+      <h2>Was ist Fermentary?</h2>
+      <p>Fermentary ist ein iOS-App für Pizza-Enthusiasten zur präzisen Berechnung von Pizzateig — mit eigenem Hefe-Modell (Q10-Ansatz, validiert gegen 25 Referenz-Szenarien), mehrstufiger Gare-Planung, Backmodus mit XL-Zutaten, Live Activity, Apple Watch Companion und 8 Pizza-Stilen (Napoletana, NY, Detroit, Pinsa, Sicilian, Grandma, Focaccia, Al Taglio).</p>
+    </div>
+
+    <div class="card" id="privacy">
+      <h2>Privacy Policy / Datenschutzerklärung</h2>
+      <p class="meta">Last updated / Stand: 2026-05-01</p>
+
+      <h3 style="margin-top:24px;font-size:17px;">English</h3>
+      <p>Fermentary respects your privacy. Here's our complete data practice:</p>
+      <ul>
+        <li><strong>No data collection:</strong> Fermentary does not collect, store, or transmit any personal data.</li>
+        <li><strong>No analytics:</strong> No tracking, no usage analytics, no crash reporters from third parties.</li>
+        <li><strong>No accounts:</strong> No login, no email collection, no user identifiers.</li>
+        <li><strong>Local storage only:</strong> All your data (recipes, timers, statistics, shopping lists) is stored exclusively on your device using Apple's local SwiftData. Nothing leaves your phone.</li>
+        <li><strong>iOS notifications:</strong> If you enable timer notifications, these are scheduled by iOS locally — no server is involved.</li>
+        <li><strong>No third-party SDKs:</strong> Fermentary uses only Apple's first-party frameworks. No external services.</li>
+      </ul>
+      <p>If you delete the app, all data is removed from your device. There is no remote backup.</p>
+
+      <h3 style="margin-top:32px;font-size:17px;">Deutsch</h3>
+      <p>Fermentary respektiert deine Privatsphäre. Hier ist unsere vollständige Datenpraxis:</p>
+      <ul>
+        <li><strong>Keine Datensammlung:</strong> Fermentary sammelt, speichert oder überträgt keine personenbezogenen Daten.</li>
+        <li><strong>Kein Tracking:</strong> Keine Analytik, keine Nutzungsstatistiken, keine Drittanbieter-Crash-Reporter.</li>
+        <li><strong>Keine Accounts:</strong> Kein Login, keine E-Mail-Erfassung, keine Nutzer-IDs.</li>
+        <li><strong>Nur lokale Speicherung:</strong> Alle deine Daten (Rezepte, Timer, Statistik, Einkaufsliste) bleiben ausschließlich auf deinem Gerät via Apple SwiftData. Nichts verlässt dein iPhone.</li>
+        <li><strong>iOS-Benachrichtigungen:</strong> Wenn du Timer-Notifications aktivierst, werden sie lokal von iOS geplant — kein Server beteiligt.</li>
+        <li><strong>Keine Drittanbieter-SDKs:</strong> Fermentary nutzt ausschließlich Apple-eigene Frameworks. Keine externen Dienste.</li>
+      </ul>
+      <p>Wenn du die App löschst, werden alle Daten von deinem Gerät entfernt. Es gibt kein Remote-Backup.</p>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Developer: Alexander Riesenbeck<br>
+      GitHub: <a href="https://github.com/Ariteq/Fermentary">github.com/Ariteq/Fermentary</a></p>
+    </div>
+
+    <footer>
+      © 2026 Alexander Riesenbeck — Fermentary
+    </footer>
+  </div>
+</body>
+</html>
