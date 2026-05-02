@@ -1,15 +1,11 @@
-# Cottura Website
+# Cottura Privacy Policy
 
-Public-facing website for Cottura — a SwiftUI iOS Pizza Dough Calculator.
+Hosted compliance document for Cottura (iOS app), required by Apple for App Store submission.
 
-Hosted via GitHub Pages: **https://ariteq.github.io/cottura-website/**
+Live at: https://ariteq.github.io/cottura-website/
 
-Contains:
-- App landing page
-- Privacy Policy (DE + EN) — required for App Store submission
+This repo contains exclusively the Privacy Policy (DE + EN). No marketing content, no app description — kept lean intentionally to avoid TMG-Impressums-Pflicht for a non-commercial compliance page.
 
 ## Why a separate repo?
 
-The main Cottura repo is private. GitHub Pages from private repos requires GitHub Pro. This public repo handles only the public-facing parts (privacy policy, landing) and stays free.
-
-© 2026 Alexander Riesenbeck
+The main Cottura repo is private. GitHub Pages from private repos requires GitHub Pro. This public repo handles only the Privacy Policy and stays free.
